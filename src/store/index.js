@@ -3,7 +3,9 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-import twitterBot from './json/twitter-bot.json'
+import allProjects from './json/all-projects.json'
+import twitterBot from './json/projects/twitter-bot.json'
+import alpacaPython from './json/projects/alpaca-python.json'
 
 export default new Vuex.Store({
   state: {
@@ -12,16 +14,11 @@ export default new Vuex.Store({
       { title: 'About', icon: 'mdi-information-outline', to: '/about' },
     ],
     projects: [
-      {
-        title: 'Projects', icon: 'mdi-palette-advanced', items: [
-          { title: 'Twitter Bot', to: 'twitter-bot' },
-          { title: 'Sick project', to: 'Sick' },
-          { title: 'Gnarly project', to: "Gnarly" },
-        ],
-      }
+      allProjects,
     ],
     projectInfo: [
       twitterBot,
+      alpacaPython,
     ],
     currProject: {},
   },

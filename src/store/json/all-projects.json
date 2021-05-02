@@ -1,0 +1,40 @@
+{
+    "title": "Projects",
+    "icon": "mdi-palette-advanced",
+    "items": [
+        {
+            "title": "Python",
+            "items": [
+                {
+                    "title": "Twitter Bot",
+                    "to": "twitter-bot"
+                },
+                {
+                    "title": "Algorithmic Trading",
+                    "to": "alpaca-python"
+                },
+                {
+                    "title": "Pacman Game",
+                    "to": "PacMan-PyGame"
+                },
+                {
+                    "title": "BOTS FFL",
+                    "to": "battle-of-the-states"
+                }
+            ]
+        },
+        {
+            "title": "Go",
+            "items": [
+                {
+                    "title": "Go Back-End",
+                    "to": "go-backend"
+                },
+                {
+                    "title": "Algorithmic Trading",
+                    "to": "go-trading-algo"
+                }
+            ]
+        }
+    ]
+}

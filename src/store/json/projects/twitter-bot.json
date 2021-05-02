@@ -2,7 +2,7 @@
     "name": "twitter-bot",
     "title": "Twitter Bot",
     "links": {
-        "repo": "https://github.com/abspen1/V3",
+        "repo": "https://github.com/abspen1/twitter-bot",
         "live": "https://austinspencer.works/twitter-bot/"
     },
     "language": "Python",
