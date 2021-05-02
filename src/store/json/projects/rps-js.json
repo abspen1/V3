@@ -4,7 +4,8 @@
     "links": {
         "repo": "https://github.com/abspen1/rps-js",
         "repoShort": "rps-js",
-        "live": "https://austinspencer.works/rps-js"
+        "live": "https://austinspencer.works/rps-js",
+        "private": true
     },
     "language": "JavaScript",
     "description": "Rock Paper Scissors game built with JavaScript!"

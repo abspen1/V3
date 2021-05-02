@@ -26,6 +26,17 @@
           sm="10"
           md="6"
         >
+          <h1 style="text-align: center">{{ projInfo.title }}</h1>
+        </v-col>
+      </v-row>
+      <v-row
+        justify="center"
+        v-if="projInfo.name === name && !projInfo.links.private"
+      >
+        <v-col
+          sm="10"
+          md="6"
+        >
           <v-card>
             <v-img :src="`${loadRepoStats(projInfo.links.repoShort, projInfo.links.user || 'abspen1')}`">
 
