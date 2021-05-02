@@ -55,6 +55,8 @@
           <v-list-item
             v-for="child in item.items"
             :key="child.title"
+            :to="{ name: 'Project', params: { name: child.to } }"
+            link
           >
             <v-list-item-content>
               <v-list-item-title v-text="child.title"></v-list-item-title>
