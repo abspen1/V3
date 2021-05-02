@@ -20,7 +20,7 @@
       </v-row>
       <v-row
         justify="center"
-        v-else
+        v-else-if="projInfo.links.private"
       >
         <v-col
           sm="10"
@@ -32,6 +32,7 @@
       <v-row
         justify="center"
         v-if="projInfo !== null && projInfo !== undefined && projInfo.name === name && !projInfo.links.private"
+        class="pa-6"
       >
         <v-col
           sm="10"
@@ -90,6 +91,42 @@
             <div v-if="name === 'twitter-bot'">
               <twitter-bot />
             </div>
+            <v-divider></v-divider>
+            <v-container>
+              <v-row>
+                <v-col cols="6">
+                  <v-chip
+                    class=""
+                    color="primary"
+                    v-if="!projInfo.links.private"
+                    outlined
+                    pill
+                    :href="projInfo.links.repo"
+                    role="link"
+                  >
+                    <v-icon>
+                      mdi-github
+                    </v-icon>
+                  </v-chip>
+                </v-col>
+                <v-col cols="6">
+                  <v-chip
+                    class="float-right"
+                    color="primary"
+                    v-if="!projInfo.links.live !== null"
+                    outlined
+                    pill
+                    :href="projInfo.links.live"
+                    role="link"
+                  >
+                    Live
+                    <v-icon right>
+                      mdi-web
+                    </v-icon>
+                  </v-chip>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-card>
         </v-col>
       </v-row>
