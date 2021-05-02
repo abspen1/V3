@@ -1,0 +1,10 @@
+{
+    "name": "twitter-bot",
+    "title": "Twitter Bot",
+    "links": {
+        "repo": "https://github.com/abspen1/V3",
+        "live": "https://austinspencer.works/twitter-bot/"
+    },
+    "language": "Python",
+    "description": "Fully automated Twitter account!"
+}

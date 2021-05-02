@@ -18,7 +18,7 @@
       <v-row v-else>
         <h1>Welcome to {{ name }} page</h1>
         <h2>Where is the demo?</h2>
-        <h3>{{ projInfo.items.demo }}</h3>
+        <h3>{{ projInfo.links }}</h3>
       </v-row>
     </v-container>
   </div>

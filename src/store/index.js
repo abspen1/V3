@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+import twitterBot from './json/twitter-bot.json'
+
 export default new Vuex.Store({
   state: {
     items: [
@@ -12,21 +14,14 @@ export default new Vuex.Store({
     projects: [
       {
         title: 'Projects', icon: 'mdi-palette-advanced', items: [
-          { title: 'Dope project', to: 'Dope' },
+          { title: 'Twitter Bot', to: 'twitter-bot' },
           { title: 'Sick project', to: 'Sick' },
           { title: 'Gnarly project', to: "Gnarly" },
         ],
       }
     ],
     projectInfo: [
-      {
-        name: 'Dope', link: 'https://github.com/abspen1/V3', items:
-        {
-          demo: 'its right here',
-          readme: 'here it is'
-        }
-
-      }
+      twitterBot,
     ],
     currProject: {},
   },
