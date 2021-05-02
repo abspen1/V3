@@ -20,6 +20,7 @@
     "fs": "0.0.1-security",
     "node-emoji": "^1.10.0",
     "prettier": "^2.2.1",
+    "showdown": "^1.9.1",
     "vue": "^2.6.11",
     "vue-eslint-parser": "^7.6.0",
     "vue-router": "^3.2.0",

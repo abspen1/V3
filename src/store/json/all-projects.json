@@ -33,6 +33,74 @@
                 {
                     "title": "Algorithmic Trading",
                     "to": "go-trading-algo"
+                },
+                {
+                    "title": "Birthday Emailer",
+                    "to": "bday-email"
+                },
+                {
+                    "title": "Encoder",
+                    "to": "go-encode"
+                }
+            ]
+        },
+        {
+            "title": "JavaScript",
+            "items": [
+                {
+                    "title": "Rock Paper Scissors",
+                    "to": "rps-js"
+                },
+                {
+                    "title": "Discord Bot",
+                    "to": "discord-bot"
+                },
+                {
+                    "title": "Website V1",
+                    "to": "abspen1"
+                }
+            ]
+        },
+        {
+            "title": "C++",
+            "items": [
+                {
+                    "title": "Encoder",
+                    "to": "encode-decode"
+                },
+                {
+                    "title": "App Store",
+                    "to": "app-store"
+                }
+            ]
+        },
+        {
+            "title": "Vue.js",
+            "items": [
+                {
+                    "title": "This Website!",
+                    "to": "v3"
+                },
+                {
+                    "title": "Captial Tracker",
+                    "to": "capital-tracker"
+                },
+                {
+                    "title": "Env Advisors",
+                    "to": "eav2"
+                }
+            ]
+        },
+        {
+            "title": "Java",
+            "items": [
+                {
+                    "title": "Attendance GUI",
+                    "to": "attendance-gui"
+                },
+                {
+                    "title": "Coffee Shop",
+                    "to": "coffee-shop"
                 }
             ]
         }
