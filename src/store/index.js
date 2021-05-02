@@ -38,12 +38,9 @@ export default new Vuex.Store({
   },
   mutations: {
     projectInfo(state, name) {
-      const project = state.projectInfo.find(proj => {
-        console.log(proj.name)
-        console.log(`name: ${name}`)
+      state.currProject = state.projectInfo.find(proj => {
         return proj.name === name
       })
-      state.currProject = project
     }
   },
   actions: {
