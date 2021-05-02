@@ -44,7 +44,6 @@
           :key="item.title"
           v-model="item.active"
           :prepend-icon="item.icon"
-          no-action
         >
           <template v-slot:activator>
             <v-list-item-content>
@@ -52,16 +51,31 @@
             </v-list-item-content>
           </template>
 
-          <v-list-item
+          <v-list-group
+            @click.stop
             v-for="child in item.items"
             :key="child.title"
-            :to="{ name: 'Project', params: { name: child.to } }"
-            link
+            v-model="child.active"
+            sub-group
+            no-action
           >
-            <v-list-item-content>
-              <v-list-item-title v-text="child.title"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
+            <template v-slot:activator>
+              <v-list-item-content>
+                <v-list-item-title v-text="child.title"></v-list-item-title>
+              </v-list-item-content>
+            </template>
+
+            <v-list-item
+              v-for="infant in child.items"
+              :key="infant.title"
+              :to="{ name: 'Project', params: { name: infant.to } }"
+              link
+            >
+              <v-list-item-content>
+                <v-list-item-title v-text="infant.title"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
         </v-list-group>
       </v-list>
     </v-navigation-drawer>

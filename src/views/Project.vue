@@ -15,6 +15,9 @@
         </v-col>
         {{ getProject() }}
       </v-row>
+      <v-row v-else-if="projInfo.name !== name">
+        {{ getProject() }}
+      </v-row>
       <v-row v-else>
         <h1>Welcome to {{ name }} page</h1>
         <h2>Where is the demo?</h2>
