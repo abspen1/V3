@@ -1,89 +1,80 @@
-<h1 id="cse340spring2021project2">CSE340 Spring 2021 Project 2</h1>
-<p>Generating a lexical analyzer automatically!</p>
-<h2 id="introduction">Introduction</h2>
-<p>I will start with a high-level description of the project in this section. In subsequent sections, I will go into a detailed description of the requirements and how to go about implementing a solution that satisfies them.
-The goal of this project is to implement a lexical analyzer automatically for any list of tokens that are specified using regular expressions. The input to your program will have two parts:</p>
-<ol>
-<li><p>The first part of the input is a list of tokens separated by commas and terminated with the # (hash) symbol. Each token in the list consists of a token name and a token description. The token description is a regular expression for the token. The list has the following form:</p>
-<p><strong>t1<em>name t1</em>description , t2<em>name t2</em>description , … , tk<em>name tk</em>description #</strong></p></li>
-<li><p>The second part of the input is a input string of letters and digits and space characters.</p></li>
-</ol>
-<p>Your program will read the list of tokens, represent them internally in appropriate data structures, and then do lexical analysis on the input string to break it down into a sequence of tokens and lexeme pairs from the provided list of tokens. The output of the program will be this sequence of tokens and lexemes. If during the processing of the input string, your program cannot identify a token to match from the list, it outputs <strong>ERROR</strong> and stops.</p>
-<p>If the input to the program has a syntax error, then your program should not do any lexical analysis of the input string and instead it should output a syntax error message and exits.</p>
-<h2 id="outputformat">Output Format</h2>
-<p>The output will be either SYNTAX ERROR if the input has a syntax error or a message indicating that one or more of the tokens have expressions that are not valid (see below) or a sequence of tokens and their corresponding lexemes according to the list of tokens provided if there are no errors. More specifically, the following are the output requirements.</p>
-<ol>
-<li><p>if the input to your program is not in the correct format (not according to the grammar in Section 2), your parser should output SYNTAX ERROR and nothing else, so you should make sure not to print anything before the complete parsing of the input is completed.</p></li>
-<li><p>if the input to your program is syntactically correct, then there are two cases to consider:</p></li>
-</ol>
+<h1 id="v1ofmywebsitehitshttpshitsseeyoufarmcomapicountincrbadgesvgurlhttps3a2f2fgithubcom2fabspen12fabspen1githubiocount_bg23323330title_bg23f0db4ficonicon_color23e7e7e7titlejsedge_flatfalsehttpshitsseeyoufarmcom">V1 of my website! <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fabspen1%2Fabspen1.github.io&count_bg=%23323330&title_bg=%23F0DB4F&icon=&icon_color=%23E7E7E7&title=JS&edge_flat=false" alt="Hits" /></a></h1>
+<p>My website, now being redirected now to my domain <a href="austinspencer.works">austinspencer.works</a></p>
+<h3 id="checkoutv2httpsgithubcomabspen1v2ofmywebsitebuiltwithvueframework">Check out <a href="https://github.com/abspen1/V2">V2</a> of my website, built with Vue framework!</h3>
+<h2 id="about">About</h2>
 <ul>
-<li>If any of the regular expressions of the tokens in the list of tokens in the input to your program can generate the empty string, then your program should output</li>
+<li>Added info form that can email me when someone wants to send me something!</li>
+<li>Was able to do this with my <a href="https://github.com/abspen1/go-backend">backend</a> in Go</li>
 </ul>
-<pre><code>EPSILON IS NOOOOOT A TOKEN !!! tok_1 tok_2 ... tok_k
-# where **tok 1, tok 2, ..., tok k** is the list of tokens whose regular expressions can generate the empty string.
-</code></pre>
+<h2 id="sociallinks">Social Links</h2>
 <ul>
-<li>If there is no syntax error and none of the expressions of the tokens can generate the empty string, your program should do lexical analysis on INPUT TEXT and produce a sequence of tokens and lexemes in INPUT TEXT according to the list of tokens specified in the input to your program. Each token and lexeme should be printed on a separate line. The output on a given line will be of the form
- <code>t , "lexeme"</code>
- where t is the name of a token and lexeme is the actual lexeme for the token t. If during lexical analysis of <strong>INPUT TEXT</strong>, a syntax error is encountered then <strong>ERROR</strong> is printed on a separate line and the program exits.
- In doing lexical analysis for <strong>INPUT TEXT</strong>, <strong>SPACE</strong> is treated as a separator and is otherwise ignored.</li>
+<li>Broke Facebook link since I don't really use Facebook or expect people clicking that link often</li>
 </ul>
-<h2 id="examples">Examples</h2>
-<p>Each of the following examples gives an input and the corresponding expected output.</p>
+<h2 id="contactpage">Contact Page</h2>
 <ul>
-<li>Input 1</li>
+<li>Allows people to enter their name, email, and a message that will get emailed to me</li>
+<li>Uses <a href="https://github.com/abspen1/go-backend">Go backend</a> to send me the email with the user's contact information</li>
+<li>Once user submits their info a new screen will show thanking them with a link to the home page</li>
+<li>Uses a go package to ensure emails are valid and also the JavaScript app makes sure that all input fields are filled </li>
 </ul>
-<pre><code class="commandline language-commandline">t1 (a)|(b) , t2 ((a)*).(a) , t3 (((a)|(b))*).(((c)*).(c)) #
-"a aac bbc aabc"
-</code></pre>
-<p>This input specifies three tokens t1, t2, and t3 and an INPUT TEXT “a aac bbc aabc”. Since the input is in the correct format and none of the regular expressions generates epsilon, the output of your program should be the list tokens in the INPUT TEXT:</p>
+<h2 id="projects">Projects</h2>
 <ul>
-<li>Output 1</li>
+<li>Most of my personal coding projects are within these sources</li>
+<li>I love keeping a high percantage of my code as open-source</li>
+<li>I have recently added some screen-recorded demos of the Java projects running</li>
+<li>I might try to do more of this for projects I can't have a webpage for</li>
 </ul>
-<pre><code class="commandline language-commandline">t1 , "a"
-t3 , "aac"
-t3 , "bbc"
-t3 , "aabc"
-</code></pre>
+<h3 id="hangman">Hangman</h3>
 <ul>
-<li>Input 2</li>
+<li>Added random-words generator with browserify 😍</li>
 </ul>
-<pre><code class="commandline language-commandline">t1 (a)|(b) , t2 ((a)*).(a) , t3 (((a)|(b))*).(c) # 
-"a aa bbc aad aa"
-</code></pre>
-<p>This input specifies three tokens t1, t2, and t3 and an INPUT TEXT “a aa bbc aad aa”. Since the input is in the correct format and none of the regular expressions generates epsilon, the output of your program should be the list tokens in the INPUT TEXT the output of the program should be</p>
+<h3 id="rockpaperscissors">Rock Paper Scissors</h3>
 <ul>
-<li>Output 2</li>
+<li>Included Rock Paper Scissors game in JavaScript projects</li>
+<li>Code from <a href="https://www.youtube.com/watch?v=jaVNP3nIAv0&t=871s">freecodecamp</a></li>
+<li>Added backend to the game with Axios and browserify</li>
+<li>You can now plug in your email and it will get your total score</li>
+<li>I might add where you can clear your score</li>
+<li>User score is stored in Redis on my <a href="https://github.com/abspen1/go-backend">backend</a></li>
 </ul>
-<pre><code class="commandline language-commandline">t1 , "a"
-t2 , "aa"
-t3 , "bbc"
-t2 , "aa"
-ERROR
-</code></pre>
-<p>Note that doing lexical analysis for INPUT TEXT according to the list of tokens produces ERROR after the second t2 token because there is no token that starts with ’d’.</p>
+<h2 id="nextproject">Next Project</h2>
 <ul>
-<li>Input 3</li>
+<li>Uses my <a href="https://github.com/abspen1/go-backend">backend</a> to persist data</li>
+<li>Might need to adjust the format of the description string..</li>
+<li>Backend is running on guldentech.com</li>
 </ul>
-<pre><code class="commandline language-commandline">t1a (a)|(b) , t2bc (a).((a)*) , t34 (((a)|(b))*).((c)|(d))
-# "aaabbcaaaa"
-</code></pre>
-<p>This input specifies three tokens whose names are t1a, t2bc, and t34 and an input text “aaabbcaaaa”. Since the input is in the correct format, the output of your program should be the list tokens in the INPUT TEXT:</p>
+<h2 id="404page">404 Page</h2>
 <ul>
-<li>Output 3</li>
+<li>Added a wild 404 page with some crazy colors</li>
+<li>There is a link back to home page</li>
 </ul>
-<pre><code class="commandline language-commandline">t34 , "aaabbc"
-t2bc , "aaaa"
-</code></pre>
+<h2 id="todo">To-Do</h2>
 <ul>
-<li>Input 4</li>
+<li>Add README to individual folders that we link to</li>
 </ul>
-<pre><code class="commandline language-commandline">t1 (a)|(b) , t2 ((a)*).(a) , t3 (a)*, t4 b , t5 ((a)|(b))* #
-"a aac bbc aabc"
-</code></pre>
-<p>This input specifies five tokens and an INPUT TEXT “a aac bbc aabc”. Since some of the regular expressions can generate epsilon, the output:</p>
+<h2 id="sources">Sources</h2>
+<h3 id="animatedbackground">Animated Background</h3>
 <ul>
-<li>Output 4</li>
+<li>Not currently using this since I couldn't get it to work with a header</li>
+<li><a href="https://codepen.io/uiswarup/pen/XWdXGGV">Kumar Kuila</a></li>
 </ul>
-<pre><code class="commandline language-commandline">EPSILON IS NOOOOOT A TOKEN !!! t3 t5
-</code></pre>
+<h3 id="fancyhover">Fancy Hover</h3>
+<ul>
+<li>Not using this right now but going to leave here as reference for future use possibly</li>
+<li><a href="https://codepen.io/shshaw/pen/MoxrPV">Shaw</a></li>
+</ul>
+<h3 id="projectpage">Project Page</h3>
+<ul>
+<li><a href="https://github.com/adamalston/v1">Adam Alston</a> has his website open-source as well.. I pulled the styles for this page from there</li>
+<li>I also got the idea for the footer/header on pages from his website. </li>
+<li>Program language logos all from <a href="https://www.logo.wine/Technology">Logo Wine</a></li>
+</ul>
+<h3 id="newproject">New Project</h3>
+<ul>
+<li><a href="https://github.com/browserify/brfs">fs/browserify/brfs</a></li>
+<li>If you use 'fs' package<ul>
+<li>$ browserify -t brfs page.js &gt; bundle.js</li></ul></li>
+<li>If not, you dont need the brfs tag<ul>
+<li>$ browserify page.js &gt; bundle.js</li></ul></li>
+<li><a href="https://github.com/abspen1/go-backend">backend</a> to persist data run on Go</li>
+</ul>

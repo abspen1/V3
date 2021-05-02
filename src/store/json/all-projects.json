@@ -15,7 +15,7 @@
                 },
                 {
                     "title": "Pacman Game",
-                    "to": "pacman"
+                    "to": "pacman-pygame"
                 },
                 {
                     "title": "BOTS FFL",
@@ -57,7 +57,7 @@
                 },
                 {
                     "title": "Website V1",
-                    "to": "abspen1"
+                    "to": "abspen-1"
                 }
             ]
         },

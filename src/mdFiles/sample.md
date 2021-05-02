@@ -1,96 +1,68 @@
-# CSE340 Spring 2021 Project 2
-Generating a lexical analyzer automatically!
+# V1 of my website! [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fabspen1%2Fabspen1.github.io&count_bg=%23323330&title_bg=%23F0DB4F&icon=&icon_color=%23E7E7E7&title=JS&edge_flat=false)](https://hits.seeyoufarm.com)
+My website, now being redirected now to my domain [austinspencer.works](austinspencer.works)
 
-## Introduction
-I will start with a high-level description of the project in this section. In subsequent sections, I will go into a detailed description of the requirements and how to go about implementing a solution that satisfies them.
-The goal of this project is to implement a lexical analyzer automatically for any list of tokens that are specified using regular expressions. The input to your program will have two parts:
-1. The first part of the input is a list of tokens separated by commas and terminated with the # (hash) symbol. Each token in the list consists of a token name and a token description. The token description is a regular expression for the token. The list has the following form:
-   
-    **t1_name t1_description , t2_name t2_description , ... , tk_name tk_description #**
-   
+### Check out [V2](https://github.com/abspen1/V2) of my website, built with Vue framework!
 
-2. The second part of the input is a input string of letters and digits and space characters.
-   
-Your program will read the list of tokens, represent them internally in appropriate data structures, and then do lexical analysis on the input string to break it down into a sequence of tokens and lexeme pairs from the provided list of tokens. The output of the program will be this sequence of tokens and lexemes. If during the processing of the input string, your program cannot identify a token to match from the list, it outputs **ERROR** and stops.
-   
-If the input to the program has a syntax error, then your program should not do any lexical analysis of the input string and instead it should output a syntax error message and exits.
+## About
+* Added info form that can email me when someone wants to send me something!
+* Was able to do this with my [backend](https://github.com/abspen1/go-backend) in Go
 
-## Output Format
-The output will be either SYNTAX ERROR if the input has a syntax error or a message indicating that one or more of the tokens have expressions that are not valid (see below) or a sequence of tokens and their corresponding lexemes according to the list of tokens provided if there are no errors. More specifically, the following are the output requirements.
+## Social Links
+* Broke Facebook link since I don't really use Facebook or expect people clicking that link often
 
-1. if the input to your program is not in the correct format (not according to the grammar in Section 2), your parser should output SYNTAX ERROR and nothing else, so you should make sure not to print anything before the complete parsing of the input is completed.
+## Contact Page
+* Allows people to enter their name, email, and a message that will get emailed to me
+* Uses [Go backend](https://github.com/abspen1/go-backend) to send me the email with the user's contact information
+* Once user submits their info a new screen will show thanking them with a link to the home page
+* Uses a go package to ensure emails are valid and also the JavaScript app makes sure that all input fields are filled 
 
-2. if the input to your program is syntactically correct, then there are two cases to consider:
-   
-   - If any of the regular expressions of the tokens in the list of tokens in the input to your program can generate the empty string, then your program should output
-   
-      
-```
-EPSILON IS NOOOOOT A TOKEN !!! tok_1 tok_2 ... tok_k
-# where **tok 1, tok 2, ..., tok k** is the list of tokens whose regular expressions can generate the empty string.
-```
-   - If there is no syntax error and none of the expressions of the tokens can generate the empty string, your program should do lexical analysis on INPUT TEXT and produce a sequence of tokens and lexemes in INPUT TEXT according to the list of tokens specified in the input to your program. Each token and lexeme should be printed on a separate line. The output on a given line will be of the form
-     ```t , "lexeme"```
-     where t is the name of a token and lexeme is the actual lexeme for the token t. If during lexical analysis of **INPUT TEXT**, a syntax error is encountered then **ERROR** is printed on a separate line and the program exits.
-     In doing lexical analysis for **INPUT TEXT**, **SPACE** is treated as a separator and is otherwise ignored.
-     
+## Projects
+* Most of my personal coding projects are within these sources
+* I love keeping a high percantage of my code as open-source
+* I have recently added some screen-recorded demos of the Java projects running
+* I might try to do more of this for projects I can't have a webpage for
 
-## Examples
-Each of the following examples gives an input and the corresponding expected output.
+### Hangman
+* Added random-words generator with browserify 😍
 
-- Input 1
-```commandline
-t1 (a)|(b) , t2 ((a)*).(a) , t3 (((a)|(b))*).(((c)*).(c)) #
-"a aac bbc aabc"
-```
-This input specifies three tokens t1, t2, and t3 and an INPUT TEXT “a aac bbc aabc”. Since the input is in the correct format and none of the regular expressions generates epsilon, the output of your program should be the list tokens in the INPUT TEXT:
+### Rock Paper Scissors
+* Included Rock Paper Scissors game in JavaScript projects
+* Code from [freecodecamp](https://www.youtube.com/watch?v=jaVNP3nIAv0&t=871s)
+* Added backend to the game with Axios and browserify
+   * You can now plug in your email and it will get your total score
+* I might add where you can clear your score
+* User score is stored in Redis on my [backend](https://github.com/abspen1/go-backend)
 
-- Output 1
-```commandline
-t1 , "a"
-t3 , "aac"
-t3 , "bbc"
-t3 , "aabc"
-```
+## Next Project
+* Uses my [backend](https://github.com/abspen1/go-backend) to persist data
+* Might need to adjust the format of the description string..
+* Backend is running on guldentech.com
 
-- Input 2
-```commandline
-t1 (a)|(b) , t2 ((a)*).(a) , t3 (((a)|(b))*).(c) # 
-"a aa bbc aad aa"
-```
-This input specifies three tokens t1, t2, and t3 and an INPUT TEXT “a aa bbc aad aa”. Since the input is in the correct format and none of the regular expressions generates epsilon, the output of your program should be the list tokens in the INPUT TEXT the output of the program should be
+## 404 Page
+* Added a wild 404 page with some crazy colors
+* There is a link back to home page
 
-- Output 2
-```commandline
-t1 , "a"
-t2 , "aa"
-t3 , "bbc"
-t2 , "aa"
-ERROR
-```
-Note that doing lexical analysis for INPUT TEXT according to the list of tokens produces ERROR after the second t2 token because there is no token that starts with ’d’.
+## To-Do
+* Add README to individual folders that we link to
 
-- Input 3
-```commandline
-t1a (a)|(b) , t2bc (a).((a)*) , t34 (((a)|(b))*).((c)|(d))
-# "aaabbcaaaa"
-```
-This input specifies three tokens whose names are t1a, t2bc, and t34 and an input text “aaabbcaaaa”. Since the input is in the correct format, the output of your program should be the list tokens in the INPUT TEXT:
+## Sources
+### Animated Background
+* Not currently using this since I couldn't get it to work with a header
+* [Kumar Kuila](https://codepen.io/uiswarup/pen/XWdXGGV)
 
-- Output 3
-```commandline
-t34 , "aaabbc"
-t2bc , "aaaa"
-```
+### Fancy Hover
+* Not using this right now but going to leave here as reference for future use possibly
+* [Shaw](https://codepen.io/shshaw/pen/MoxrPV)
 
-- Input 4
-```commandline
-t1 (a)|(b) , t2 ((a)*).(a) , t3 (a)*, t4 b , t5 ((a)|(b))* #
-"a aac bbc aabc"
-```
-This input specifies five tokens and an INPUT TEXT “a aac bbc aabc”. Since some of the regular expressions can generate epsilon, the output:
+### Project Page
+* [Adam Alston](https://github.com/adamalston/v1) has his website open-source as well.. I pulled the styles for this page from there
+* I also got the idea for the footer/header on pages from his website. 
+* Program language logos all from [Logo Wine](https://www.logo.wine/Technology)
 
-- Output 4
-```commandline
-EPSILON IS NOOOOOT A TOKEN !!! t3 t5
-```
+### New Project
+* [fs/browserify/brfs](https://github.com/browserify/brfs)
+* If you use 'fs' package
+    * $ browserify -t brfs page.js > bundle.js
+* If not, you dont need the brfs tag
+    * $ browserify page.js > bundle.js
+* [backend](https://github.com/abspen1/go-backend) to persist data run on Go

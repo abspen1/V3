@@ -31,7 +31,7 @@
       </v-row>
       <v-row
         justify="center"
-        v-if="projInfo.name === name && !projInfo.links.private"
+        v-if="projInfo !== null && projInfo !== undefined && projInfo.name === name && !projInfo.links.private"
       >
         <v-col
           sm="10"
@@ -51,7 +51,7 @@
         >
           <v-card class="pa-6">
 
-            <div v-if="name === 'abspen1'">
+            <div v-if="name === 'abspen-1'">
               <abspen1 />
             </div>
             <div v-if="name === 'go-trading-algo'">
@@ -60,8 +60,14 @@
             <div v-if="name === 'alpaca-python'">
               <alpaca-python />
             </div>
+            <div v-if="name === 'attendance-gui'">
+              <attendance />
+            </div>
             <div v-if="name === 'bday-email'">
               <bday-email />
+            </div>
+            <div v-if="name === 'bots'">
+              <bots />
             </div>
             <div v-if="name === 'coffee-shop'">
               <coffee-shop />
@@ -92,7 +98,9 @@
 import Abspen1 from "../components/README/Abspen1.vue";
 import AlpacaGo from "../components/README/AlpacaGo.vue";
 import AlpacaPython from "../components/README/AlpacaPython.vue";
+import Attendance from "../components/README/Attendance.vue";
 import BdayEmail from "../components/README/BdayEmail.vue";
+import Bots from "../components/README/Bots.vue";
 import CoffeeShop from "../components/README/CoffeeShop.vue";
 import DiscordBot from "../components/README/DiscordBot.vue";
 import Encode from "../components/README/Encode.vue";
@@ -108,7 +116,9 @@ export default {
     abspen1: Abspen1,
     "alpaca-go": AlpacaGo,
     "alpaca-python": AlpacaPython,
+    attendance: Attendance,
     "bday-email": BdayEmail,
+    bots: Bots,
     "coffee-shop": CoffeeShop,
     "discord-bot": DiscordBot,
     encode: Encode,

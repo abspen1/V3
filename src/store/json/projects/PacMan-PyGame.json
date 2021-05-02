@@ -1,5 +1,5 @@
 {
-    "name": "pacman",
+    "name": "pacman-pygame",
     "title": "Pacman Game",
     "links": {
         "repo": "https://github.com/asu-cse-source-code/mat-243-pacman-pygame",
