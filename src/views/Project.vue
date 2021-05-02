@@ -108,7 +108,6 @@ import CoffeeShop from "../components/README/CoffeeShop.vue";
 import DiscordBot from "../components/README/DiscordBot.vue";
 import Encode from "../components/README/Encode.vue";
 import EncodeDecode from "../components/README/EncodeDecode.vue";
-import GoBackend from "../components/README/GoBackend";
 import GoBackend from "../components/README/GoBackend.vue";
 import LexicalAnalyzer from "../components/README/LexicalAnalyzer.vue";
 import TwitBotMD from "../components/README/TwitterBot.vue";
@@ -131,7 +130,6 @@ export default {
     "go-backend": GoBackend,
     "lexical-analyzer": LexicalAnalyzer,
     "twitter-bot": TwitBotMD,
-    GoBackend,
   },
   data: () => ({}),
   methods: {
