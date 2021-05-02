@@ -78,6 +78,9 @@
             <div v-if="name === 'go-encode'">
               <encode />
             </div>
+            <div v-if="name === 'go-backend'">
+              <go-backend />
+            </div>
             <div v-if="name === 'encode-decode'">
               <encode-decode />
             </div>
@@ -105,6 +108,8 @@ import CoffeeShop from "../components/README/CoffeeShop.vue";
 import DiscordBot from "../components/README/DiscordBot.vue";
 import Encode from "../components/README/Encode.vue";
 import EncodeDecode from "../components/README/EncodeDecode.vue";
+import GoBackend from "../components/README/GoBackend";
+import GoBackend from "../components/README/GoBackend.vue";
 import LexicalAnalyzer from "../components/README/LexicalAnalyzer.vue";
 import TwitBotMD from "../components/README/TwitterBot.vue";
 
@@ -123,8 +128,10 @@ export default {
     "discord-bot": DiscordBot,
     encode: Encode,
     "encode-decode": EncodeDecode,
+    "go-backend": GoBackend,
     "lexical-analyzer": LexicalAnalyzer,
     "twitter-bot": TwitBotMD,
+    GoBackend,
   },
   data: () => ({}),
   methods: {
