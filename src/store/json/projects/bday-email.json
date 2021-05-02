@@ -3,6 +3,7 @@
     "title": "Birthday Emailer",
     "links": {
         "repo": "https://github.com/abspen1/bday-email",
+        "repoShort": "bday-email",
         "live": null
     },
     "language": "Go",

@@ -3,6 +3,7 @@
     "title": "Env Advisors",
     "links": {
         "repo": "https://github.com/abspen1/eav2",
+        "repoShort": "eav2",
         "live": "https://austinspencer.works/eav2"
     },
     "language": "Vue.js",

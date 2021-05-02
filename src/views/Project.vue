@@ -18,10 +18,20 @@
       <v-row v-else-if="projInfo.name !== name">
         {{ getProject() }}
       </v-row>
-      <v-row v-else>
-        <h1>Welcome to {{ name }} page</h1>
-        <h2>Where is the demo?</h2>
-        <h3>{{ projInfo.links }}</h3>
+      <v-row
+        justify="center"
+        v-else
+      >
+        <v-col
+          sm="10"
+          md="6"
+        >
+          <v-card>
+            <v-img :src="`${loadRepoStats(projInfo.links.repoShort, projInfo.links.user || 'abspen1')}`">
+
+            </v-img>
+          </v-card>
+        </v-col>
       </v-row>
       <v-row justify="center">
         <v-col
@@ -29,6 +39,34 @@
           md="8"
         >
           <v-card class="pa-6">
+
+            <div v-if="name === 'abspen1'">
+              <abspen1 />
+            </div>
+            <div v-if="name === 'go-trading-algo'">
+              <alpaca-go />
+            </div>
+            <div v-if="name === 'alpaca-python'">
+              <alpaca-python />
+            </div>
+            <div v-if="name === 'bday-email'">
+              <bday-email />
+            </div>
+            <div v-if="name === 'coffee-shop'">
+              <coffee-shop />
+            </div>
+            <div v-if="name === 'discord-bot'">
+              <discord-bot />
+            </div>
+            <div v-if="name === 'go-encode'">
+              <encode />
+            </div>
+            <div v-if="name === 'encode-decode'">
+              <encode-decode />
+            </div>
+            <div v-if="name === 'lexical-analyzer'">
+              <lexical-analyzer />
+            </div>
             <div v-if="name === 'twitter-bot'">
               <twitter-bot />
             </div>
@@ -40,6 +78,15 @@
 </template>
 
 <script>
+import Abspen1 from "../components/README/Abspen1.vue";
+import AlpacaGo from "../components/README/AlpacaGo.vue";
+import AlpacaPython from "../components/README/AlpacaPython.vue";
+import BdayEmail from "../components/README/BdayEmail.vue";
+import CoffeeShop from "../components/README/CoffeeShop.vue";
+import DiscordBot from "../components/README/DiscordBot.vue";
+import Encode from "../components/README/Encode.vue";
+import EncodeDecode from "../components/README/EncodeDecode.vue";
+import LexicalAnalyzer from "../components/README/LexicalAnalyzer.vue";
 import TwitBotMD from "../components/README/TwitterBot.vue";
 
 export default {
@@ -47,12 +94,24 @@ export default {
     name: String,
   },
   components: {
+    abspen1: Abspen1,
+    "alpaca-go": AlpacaGo,
+    "alpaca-python": AlpacaPython,
+    "bday-email": BdayEmail,
+    "coffee-shop": CoffeeShop,
+    "discord-bot": DiscordBot,
+    encode: Encode,
+    "encode-decode": EncodeDecode,
+    "lexical-analyzer": LexicalAnalyzer,
     "twitter-bot": TwitBotMD,
   },
   data: () => ({}),
   methods: {
     getProject() {
       this.$store.commit("projectInfo", this.name);
+    },
+    loadRepoStats(repoPath, user) {
+      return `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repoPath}&theme=default_repocard`;
     },
   },
   computed: {

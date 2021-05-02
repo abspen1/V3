@@ -3,6 +3,7 @@
     "title": "Discord Bot",
     "links": {
         "repo": "https://github.com/abspen1/discord-bot",
+        "repoShort": "discord-bot",
         "live": "https://discord.gg/pmK8StNjyu"
     },
     "language": "JavaScript",

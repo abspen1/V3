@@ -3,6 +3,7 @@
     "title": "Algorithmic Trading",
     "links": {
         "repo": "https://github.com/abspen1/go-trading-algo",
+        "repoShort": "go-trading-algo",
         "live": null
     },
     "language": "Go",

@@ -3,6 +3,8 @@
     "title": "Capital Tracker",
     "links": {
         "repo": "https://github.com/laude-capital",
+        "repoShort": "capital-tracker-issues",
+        "user": "laude-capital",
         "live": "https://captrack.laudecapital.com/"
     },
     "language": "Vue.js",

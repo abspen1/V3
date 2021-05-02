@@ -2,7 +2,8 @@
     "name": "encode-decode",
     "title": "Encode/Decode",
     "links": {
-        "repo": "https://github.com/asu-cse-source-code/cse-310/tree/main/CSE-310-P1",
+        "repo": "https://github.com/abspen1/cse-310-encode-decode",
+        "repoShort": "cse-310-encode-decode",
         "live": null
     },
     "language": "C++",
