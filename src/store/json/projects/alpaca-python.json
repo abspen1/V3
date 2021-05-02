@@ -3,7 +3,7 @@
     "title": "Algorithmic Trading",
     "links": {
         "repo": "https://github.com/abspen1/alpaca-python",
-        "live": "https://austinspencer.works/alpaca-python/"
+        "live": null
     },
     "language": "Python",
     "description": "Using Alpaca API to run an alorithmic trading script in Python"

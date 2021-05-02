@@ -1,0 +1,10 @@
+{
+    "name": "rps-js",
+    "title": "Rock Paper Scissors",
+    "links": {
+        "repo": "https://github.com/abspen1/rps-js",
+        "live": "https://austinspencer.works/rps-js"
+    },
+    "language": "JavaScript",
+    "description": "Rock Paper Scissors game built with JavaScript!"
+}

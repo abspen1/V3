@@ -15,11 +15,11 @@
                 },
                 {
                     "title": "Pacman Game",
-                    "to": "PacMan-PyGame"
+                    "to": "pacman"
                 },
                 {
                     "title": "BOTS FFL",
-                    "to": "battle-of-the-states"
+                    "to": "bots"
                 }
             ]
         },
@@ -69,8 +69,8 @@
                     "to": "encode-decode"
                 },
                 {
-                    "title": "App Store",
-                    "to": "app-store"
+                    "title": "Lexical Analyzer",
+                    "to": "lexical-analyzer"
                 }
             ]
         },

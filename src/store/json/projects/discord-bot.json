@@ -1,0 +1,10 @@
+{
+    "name": "discord-bot",
+    "title": "Discord Bot",
+    "links": {
+        "repo": "https://github.com/abspen1/discord-bot",
+        "live": "https://discord.gg/pmK8StNjyu"
+    },
+    "language": "JavaScript",
+    "description": "Discord Bot that can perform several cool commands"
+}

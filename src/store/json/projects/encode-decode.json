@@ -1,0 +1,10 @@
+{
+    "name": "encode-decode",
+    "title": "Encode/Decode",
+    "links": {
+        "repo": "https://github.com/asu-cse-source-code/cse-310/tree/main/CSE-310-P1",
+        "live": null
+    },
+    "language": "C++",
+    "description": "This is a program that will take std::in input and output to std::out. However both can be redirected from/to txt files."
+}

@@ -1,9 +1,9 @@
 {
-    "name": "PacMan-PyGame",
+    "name": "pacman",
     "title": "Pacman Game",
     "links": {
         "repo": "https://github.com/abspen1/PacMan-PyGame",
-        "live": "https://austinspencer.works/PacMan-PyGame/"
+        "live": null
     },
     "language": "Python",
     "description": "PacMan-like game built with PyGame package in Python"
