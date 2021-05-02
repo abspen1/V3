@@ -23,14 +23,31 @@
         <h2>Where is the demo?</h2>
         <h3>{{ projInfo.links }}</h3>
       </v-row>
+      <v-row justify="center">
+        <v-col
+          sm="10"
+          md="8"
+        >
+          <v-card class="pa-6">
+            <div v-if="name === 'twitter-bot'">
+              <twitter-bot />
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
 
 <script>
+import TwitBotMD from "../components/README/TwitterBot.vue";
+
 export default {
   props: {
     name: String,
+  },
+  components: {
+    "twitter-bot": TwitBotMD,
   },
   data: () => ({}),
   methods: {
