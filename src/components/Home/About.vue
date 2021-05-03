@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row
-      style="padding-bottom: 10vh;"
+      style="padding-bottom: 20vh;"
       justify="center"
       align="center"
       class="about"
