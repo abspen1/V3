@@ -2,11 +2,12 @@
   <div>
     <v-navigation-drawer
       v-model="drawer"
+      color="background"
       app
     >
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="title">
+          <v-list-item-title class="title primary--text">
             Menu
           </v-list-item-title>
           <!-- <v-list-item-subtitle>
@@ -81,24 +82,24 @@
     </v-navigation-drawer>
 
     <v-app-bar
-      color="primary"
-      dark
+      color="background"
       app
-      shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      hide-on-scroll
     >
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        class="secondary--text"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Austin's Website</v-toolbar-title>
+      <v-toolbar-title class="secondary--text">{{ $route.name }}</v-toolbar-title>
       <v-spacer></v-spacer>
-
       <v-btn
         @click="darkMode()"
         fab
         elevation="1"
         icon
       >
-        <v-icon>mdi-invert-colors</v-icon>
+        <v-icon class="secondary--text">mdi-invert-colors</v-icon>
       </v-btn>
     </v-app-bar>
     <!-- Button that appears once you start scrolling on the page that will take you to the top -->
@@ -130,7 +131,6 @@ export default {
   methods: {
     darkMode() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      //   console.log("yup");
     },
     onScroll(e) {
       if (typeof window === "undefined") return;
