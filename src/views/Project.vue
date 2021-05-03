@@ -113,7 +113,7 @@
                   <v-chip
                     class="float-right"
                     color="primary"
-                    v-if="!projInfo.links.live !== null"
+                    v-if="projInfo.links.live !== null"
                     outlined
                     pill
                     :href="projInfo.links.live"
@@ -174,7 +174,10 @@ export default {
       this.$store.commit("projectInfo", this.name);
     },
     loadRepoStats(repoPath, user) {
-      return `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repoPath}&theme=default_repocard`;
+      if (this.$vuetify.theme.dark) {
+        return `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repoPath}&bg_color=000&title_color=FF7028&text_color=fff`;
+      }
+      return `https://github-readme-stats.vercel.app/api/pin/?username=${user}&repo=${repoPath}&theme=default_repocard&title_color=FF7028`;
     },
   },
   computed: {
