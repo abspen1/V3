@@ -82,7 +82,10 @@
 
     <v-app-bar
       color="primary"
+      dark
       app
+      shrink-on-scroll
+      src="https://picsum.photos/1920/1080?random"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
