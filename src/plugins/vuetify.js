@@ -9,16 +9,16 @@ export default new Vuetify({
         dark: true,
         themes: {
             dark: {
-                primary: colors.cyan.darken2,
-                secondary: colors.blue.darken2,
-                accent: colors.teal.base,
-                background: colors.grey.darken4,
+                primary: "#FF7028",
+                secondary: "#FFFFFD",
+                accent: "#593424",
+                background: "#2E2E2B",
             },
             light: {
-                primary: colors.cyan.darken1,
+                primary: "#5D0F2F",
                 secondary: colors.grey.lighten5,
                 accent: colors.blueGrey.lighten3,
-                error: colors.red.accent3,
+                background: "#FFA980"
             }
         }
     }
