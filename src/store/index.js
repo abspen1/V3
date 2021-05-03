@@ -69,6 +69,34 @@ export default new Vuex.Store({
         url: 'https://twitter.com/austinbspencer'
       },
     ],
+    work: [
+      {
+        company: "USAA",
+        title: "Data Engineer Intern",
+        roles: [
+          'Learn cloud using Snowflake and AWS as well as SQL and Informatica',
+          'Work closely with business engagement using agile to run our projects',
+          'Join daily stand ups and be given stories for a specific delivery'
+        ],
+        color: "#0A3C61",
+        url: "https://www.usaa.com/",
+        image: "usaa.jpeg",
+        dates: "May 2021 - Aug 2021"
+      },
+      {
+        company: "Salt River Project",
+        title: "Solutions Center Intern",
+        roles: [
+          'Provide phone/chat assistance to internal SRP clients with varying degrees of technical knowledge',
+          'Provide excellent customer service demonstrating patience while effectively dealing with client problems',
+          'Perform problem-solving over the phone or through chat and determine appropriate course of problem escalation as required, while ensuring detailed written documentation'
+        ],
+        color: "#004886",
+        url: "https://www.srpnet.com/",
+        image: "srp.png",
+        dates: "Nov 2020 - Apr 2021"
+      },
+    ],
   },
   getters: {
     currentItems(state) {
@@ -85,6 +113,12 @@ export default new Vuex.Store({
     },
     links(state) {
       return state.links
+    },
+    work(state) {
+      return state.work
+    },
+    colors(state) {
+      return state.colors
     }
   },
   mutations: {
