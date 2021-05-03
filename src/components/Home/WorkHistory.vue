@@ -6,7 +6,7 @@
       class="about"
     >
       <v-col cols="5">
-        <h3>Work History</h3>
+        <h3 class="accent--text headline font-weight-bold">Work History</h3>
         <hr>
         <br>
       </v-col>
@@ -37,17 +37,17 @@
             </template>
             <template v-slot:opposite>
               <span
-                :class="`headline ${getColor(i)}--text`"
+                :class="`headline `"
                 v-text="job.dates"
               ></span>
             </template>
             <div class="py-4">
-              <h2 :class="`headline font-weight-bold mb-4 ${getColor(i)}--text`">
+              <h2 :class="`headline font-weight-bold secondary--text mb-4 `">
                 {{ job.title }}
               </h2>
               <h4
                 @click="goToUrl(job.url)"
-                :class="`subtitle-1 link font-weight-light mb-2 ${getColor(i)}--text`"
+                :class="`subtitle-1 link  mb-2 `"
               >
                 {{ job.company }}
               </h4>
