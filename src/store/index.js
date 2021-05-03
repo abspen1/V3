@@ -27,7 +27,7 @@ export default new Vuex.Store({
   state: {
     items: [
       { title: 'Home', icon: 'mdi-home', to: '/' },
-      { title: 'Contact', icon: 'mdi-information-outline', to: '/contact' },
+      // { title: 'Contact', icon: 'mdi-information-outline', to: '/contact' },
     ],
     projects: [
       allProjects,
@@ -37,6 +37,38 @@ export default new Vuex.Store({
       lexical, rps, pacman, v3,
     ],
     currProject: {},
+    links: [
+      {
+        title: 'email',
+        icon: 'mdi-email-outline',
+        url: 'mailto:abspencer2097@gmail.com'
+      },
+      {
+        title: 'github',
+        icon: 'mdi-github',
+        url: 'https://github.com/abspen1'
+      },
+      {
+        title: 'linkedIn',
+        icon: 'mdi-linkedin',
+        url: 'https://www.linkedin.com/in/austin-spencer-b56a25177/'
+      },
+      {
+        title: 'facebook',
+        icon: 'mdi-facebook',
+        url: 'https://www.facebook.com/austin.spencer.129/'
+      },
+      {
+        title: 'instagram',
+        icon: 'mdi-instagram',
+        url: 'https://www.instagram.com/austinspencer/'
+      },
+      {
+        title: 'twitter',
+        icon: 'mdi-twitter',
+        url: 'https://twitter.com/austinbspencer'
+      },
+    ],
   },
   getters: {
     currentItems(state) {
@@ -50,6 +82,9 @@ export default new Vuex.Store({
     },
     currentProject(state) {
       return state.currProject
+    },
+    links(state) {
+      return state.links
     }
   },
   mutations: {
