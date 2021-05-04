@@ -16,7 +16,7 @@
         <br>
         <p>I am a Senior at Arizona State University expecting to graduate in May, 2022 with a Computer Science degree. I am working as a Data Engineer Intern for <code
             @click="USAA()"
-            class="usaa primary--text"
+            class="usaa primary--text pa-1"
           >USAA</code> this summer. </p>
         <p>I grew up in central Illinois
           and moved to Arizona in 2019. I originally went to school to study Biology but after a couple years, found my true passion in programming.
