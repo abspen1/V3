@@ -70,6 +70,9 @@
             <div v-if="name === 'bots'">
               <bots />
             </div>
+            <div v-if="name === 'capital-tracker'">
+              <cap-track />
+            </div>
             <div v-if="name === 'coffee-shop'">
               <coffee-shop />
             </div>
@@ -141,6 +144,7 @@ import AlpacaPython from "../components/README/AlpacaPython.vue";
 import Attendance from "../components/README/Attendance.vue";
 import BdayEmail from "../components/README/BdayEmail.vue";
 import Bots from "../components/README/Bots.vue";
+import Captrack from "../components/README/Captrack.vue";
 import CoffeeShop from "../components/README/CoffeeShop.vue";
 import DiscordBot from "../components/README/DiscordBot.vue";
 import Encode from "../components/README/Encode.vue";
@@ -160,6 +164,7 @@ export default {
     attendance: Attendance,
     "bday-email": BdayEmail,
     bots: Bots,
+    "cap-track": Captrack,
     "coffee-shop": CoffeeShop,
     "discord-bot": DiscordBot,
     encode: Encode,
