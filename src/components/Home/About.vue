@@ -19,7 +19,7 @@
             class="usaa primary--text"
           >USAA</code> this summer. </p>
         <p>I grew up in central Illinois
-          and moved to Arizona ~2 years ago. I originally went to school to study Biology but after a couple years, found my true passion in programming.
+          and moved to Arizona in 2019. I originally went to school to study Biology but after a couple years, found my true passion in programming.
         </p>
         <p>When I'm not working or studying I like to hike and play sports. My newfound hobby that I enjoy a lot is snowboarding!</p>
       </v-col>
