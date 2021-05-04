@@ -3,6 +3,7 @@
     <landing />
     <about />
     <work-history />
+    <projects />
   </v-container>
 </template>
 
@@ -10,6 +11,7 @@
 import Landing from "../components/Home/Landing.vue";
 import About from "../components/Home/About.vue";
 import WorkHistory from "../components/Home/WorkHistory.vue";
+import Projects from "../components/Home/Projects.vue";
 
 export default {
   name: "Home",
@@ -17,6 +19,7 @@ export default {
     landing: Landing,
     about: About,
     "work-history": WorkHistory,
+    projects: Projects,
   },
   methods: {
     USAA() {

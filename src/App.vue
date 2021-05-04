@@ -38,3 +38,54 @@ export default {
   },
 };
 </script>
+
+<style>
+h1 {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 32px;
+}
+h2 {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 25px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 25px;
+}
+h3 {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 20px;
+}
+p {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+</style>

@@ -6,7 +6,7 @@
       class="about"
     >
       <v-col cols="5">
-        <h3 class="accent--text headline font-weight-bold">Work History</h3>
+        <h2 class="accent--text pb-1 font-weight-bold">Work History</h2>
         <hr>
         <br>
       </v-col>

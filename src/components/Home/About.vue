@@ -11,7 +11,7 @@
         md="4"
         lg="4"
       >
-        <h3 class="accent--text headline font-weight-bold">About Me</h3>
+        <h2 class="accent--text pb-1 font-weight-bold">About Me</h2>
         <hr>
         <br>
         <p>I am a Senior at Arizona State University expecting to graduate in May, 2022 with a Computer Science degree. I am working as a Data Engineer Intern for <code
