@@ -11,8 +11,6 @@
       style="padding-bottom: 10vh;"
       justify="center"
       align="center"
-      class="about"
-      wrap
     >
       <v-col
         sm="10"
@@ -67,11 +65,9 @@
       </v-col>
     </v-row>
     <v-row
-      style="padding-bottom: 20vh;"
+      style="padding-bottom: 10vh;"
       justify="center"
       align="center"
-      class="about"
-      wrap
     >
 
       <v-col
@@ -128,6 +124,15 @@
         <v-card class="mx-auto">
           <v-img src="captrack.png"></v-img>
         </v-card>
+      </v-col>
+    </v-row>
+    <v-row
+      style="padding-bottom: 10vh;"
+      justify="center"
+      align="center"
+    >
+      <v-col cols="6">
+        <p>My other projects can be found on my GitHub or right here in the <code>Projects</code> page!</p>
       </v-col>
     </v-row>
   </div>
