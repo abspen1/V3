@@ -22,14 +22,23 @@
               class="ma-2"
               color="primary"
               label
-              link
-              href="https://austinspencer.works/twitter-bot"
               outlined
             >
-              <v-icon left>
+              <v-icon
+                class="icon-link"
+                @click="goToUrl('https://austinspencer.works/twitter-bot')"
+                left
+              >
                 mdi-twitter
               </v-icon>
               Twitter Bot
+              <v-icon
+                class="icon-link"
+                @click="goToUrl('https://github.com/abspen1/twitter-bot')"
+                right
+              >
+                mdi-github
+              </v-icon>
             </v-chip>
           </v-col>
         </v-row>
@@ -60,7 +69,11 @@
         md="6"
       >
         <v-card class="mx-auto">
-          <v-img src="twitbot.png"></v-img>
+          <v-img
+            @click="goToUrl('https://austinspencer.works/twitter-bot')"
+            src="twitbot.png"
+            class="link"
+          ></v-img>
         </v-card>
       </v-col>
     </v-row>
@@ -122,7 +135,11 @@
         md="6"
       >
         <v-card class="mx-auto">
-          <v-img src="captrack.png"></v-img>
+          <v-img
+            @click="goToUrl('https://captrack.laudecapital.com/#/')"
+            src="captrack.png"
+            class="link"
+          ></v-img>
         </v-card>
       </v-col>
     </v-row>
@@ -139,11 +156,25 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goToUrl(url) {
+      location.href = url;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 .projects {
   font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+.link:hover {
+  cursor: pointer;
+  border: 10px solid white;
+}
+.icon-link:hover {
+  cursor: pointer;
+  color: black;
 }
 </style>
