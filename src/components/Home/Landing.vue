@@ -11,7 +11,7 @@
     >
       <span>Hello, my name is</span>
       <h1 class="primary--text">Austin Spencer</h1>
-      <p>Thanks for visiting my website!</p>
+      <p class="pt-1">Thanks for visiting my website!</p>
     </v-col>
     <v-col
       sm="2"
