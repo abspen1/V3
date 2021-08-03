@@ -5,10 +5,10 @@
     <h1 id="running">Running</h1>
     <p>This will allow user to interact with a coffee shop the way you would in real life.</p>
     <ul>
-      <li><a href="https://github.com/abspen1/coffee-shop/tree/main#buy">Buy</a></li>
-      <li><a href="https://github.com/abspen1/coffee-shop/tree/main#fill">Fill</a></li>
-      <li><a href="https://github.com/abspen1/coffee-shop/tree/main#take">Take</a></li>
-      <li><a href="https://github.com/abspen1/coffee-shop/tree/main#buy">Remaining</a></li>
+      <li><a href="https://github.com/austinbspencer/coffee-shop/tree/main#buy">Buy</a></li>
+      <li><a href="https://github.com/austinbspencer/coffee-shop/tree/main#fill">Fill</a></li>
+      <li><a href="https://github.com/austinbspencer/coffee-shop/tree/main#take">Take</a></li>
+      <li><a href="https://github.com/austinbspencer/coffee-shop/tree/main#buy">Remaining</a></li>
     </ul>
     <h2 id="jetbrains">JetBrains</h2>
     <p>This is a project from <a href="https://hyperskill.org/projects/33?track=1">here</a>. I chose to use Eclipse to build and run this project. Will work with whichever compiler of your choice. The main purpose of this project was to refresh my Java and OOP skills. I enjoyed creating this project for those reasons.</p>

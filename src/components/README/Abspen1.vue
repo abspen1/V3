@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h1 id="v1ofmywebsitehitshttpshitsseeyoufarmcomapicountincrbadgesvgurlhttps3a2f2fgithubcom2fabspen12fabspen1githubiocount_bg23323330title_bg23f0db4ficonicon_color23e7e7e7titlejsedge_flatfalsehttpshitsseeyoufarmcom">V1 of my website! <a href="https://hits.seeyoufarm.com"><img
+    <h1 id="v1ofmywebsitehitshttpshitsseeyoufarmcomapicountincrbadgesvgurlhttps3a2f2fgithubcom2faustinbspencer2fabspen1githubiocount_bg23323330title_bg23f0db4ficonicon_color23e7e7e7titlejsedge_flatfalsehttpshitsseeyoufarmcom">V1 of my website! <a href="https://hits.seeyoufarm.com"><img
           src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fabspen1%2Fabspen1.github.io&count_bg=%23323330&title_bg=%23F0DB4F&icon=&icon_color=%23E7E7E7&title=JS&edge_flat=false"
           alt="Hits"
         /></a></h1>
-    <p>My website, now being redirected now to my domain <a href="austinspencer.works">austinspencer.works</a></p>
-    <h3 id="checkoutv2httpsgithubcomabspen1v2ofmywebsitebuiltwithvueframework">Check out <a href="https://github.com/abspen1/V2">V2</a> of my website, built with Vue framework!</h3>
+    <p>My website, now being redirected now to my domain <a href="austinbspencer.com">austinbspencer.com</a></p>
+    <h3 id="checkoutv2httpsgithubcomaustinbspencerv2ofmywebsitebuiltwithvueframework">Check out <a href="https://github.com/austinbspencer/V2">V2</a> of my website, built with Vue framework!</h3>
     <h2 id="about">About</h2>
     <ul>
       <li>Added info form that can email me when someone wants to send me something!</li>
-      <li>Was able to do this with my <a href="https://github.com/abspen1/go-backend">backend</a> in Go</li>
+      <li>Was able to do this with my <a href="https://github.com/austinbspencer/go-backend">backend</a> in Go</li>
     </ul>
     <h2 id="sociallinks">Social Links</h2>
     <ul>
@@ -18,7 +18,7 @@
     <h2 id="contactpage">Contact Page</h2>
     <ul>
       <li>Allows people to enter their name, email, and a message that will get emailed to me</li>
-      <li>Uses <a href="https://github.com/abspen1/go-backend">Go backend</a> to send me the email with the user's contact information</li>
+      <li>Uses <a href="https://github.com/austinbspencer/go-backend">Go backend</a> to send me the email with the user's contact information</li>
       <li>Once user submits their info a new screen will show thanking them with a link to the home page</li>
       <li>Uses a go package to ensure emails are valid and also the JavaScript app makes sure that all input fields are filled </li>
     </ul>
@@ -40,11 +40,11 @@
       <li>Added backend to the game with Axios and browserify</li>
       <li>You can now plug in your email and it will get your total score</li>
       <li>I might add where you can clear your score</li>
-      <li>User score is stored in Redis on my <a href="https://github.com/abspen1/go-backend">backend</a></li>
+      <li>User score is stored in Redis on my <a href="https://github.com/austinbspencer/go-backend">backend</a></li>
     </ul>
     <h2 id="nextproject">Next Project</h2>
     <ul>
-      <li>Uses my <a href="https://github.com/abspen1/go-backend">backend</a> to persist data</li>
+      <li>Uses my <a href="https://github.com/austinbspencer/go-backend">backend</a> to persist data</li>
       <li>Might need to adjust the format of the description string..</li>
       <li>Backend is running on guldentech.com</li>
     </ul>
@@ -85,7 +85,7 @@
           <li>$ browserify page.js &gt; bundle.js</li>
         </ul>
       </li>
-      <li><a href="https://github.com/abspen1/go-backend">backend</a> to persist data run on Go</li>
+      <li><a href="https://github.com/austinbspencer/go-backend">backend</a> to persist data run on Go</li>
     </ul>
   </div>
 </template>

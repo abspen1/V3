@@ -46,7 +46,7 @@ export default new Vuex.Store({
       {
         title: 'github',
         icon: 'mdi-github',
-        url: 'https://github.com/abspen1'
+        url: 'https://github.com/austinbspencer'
       },
       {
         title: 'linkedIn',

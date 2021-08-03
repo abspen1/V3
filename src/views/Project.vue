@@ -39,7 +39,7 @@
           md="6"
         >
           <v-card>
-            <v-img :src="`${loadRepoStats(projInfo.links.repoShort, projInfo.links.user || 'abspen1')}`">
+            <v-img :src="`${loadRepoStats(projInfo.links.repoShort, projInfo.links.user || 'austinbspencer')}`">
 
             </v-img>
           </v-card>

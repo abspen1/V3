@@ -83,9 +83,9 @@ $ docker push 10.10.10.1:5000/algo-name
     <h3 id="python-1">Python</h3>
     <p><strong>redis</strong></p>
     <ul>
-      <li>Check my other repo <a href="https://github.com/abspen1/twitter-bot#prerequisites">twitter-bot</a> for redis install directions</li>
+      <li>Check my other repo <a href="https://github.com/austinbspencer/twitter-bot#prerequisites">twitter-bot</a> for redis install directions</li>
       <li>I also implement redis in several ways in that repo so a great resource for more examples</li>
-      <li>In my <a href="https://github.com/abspen1/Fantasy-Twitter/blob/master/main.py">Fantasy-Twitter</a> script I also use Redis.</li>
+      <li>In my <a href="https://github.com/austinbspencer/Fantasy-Twitter/blob/master/main.py">Fantasy-Twitter</a> script I also use Redis.</li>
       <li>In my opinion, Redis is the easiest to manipulate in Python. Could be biased since I've used Redis with Python the most out of the three</li>
     </ul>
     <h2 id="redisshortable">📁 redis-shortable</h2>

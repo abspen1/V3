@@ -33,7 +33,7 @@
     <h2 id="customizeyourbot">Customize Your Bot</h2>
     <p>Below are some instruction you can copy and paste in your terminal to get started with creating your personal bot. First open terminal and then cd into wherever you want to store your code. In this example I will cd into Documents and assume you are using VSCode.</p>
     <pre><code class="bash language-bash">cd Documents/
-git clone https://github.com/abspen1/twitter-bot.git
+git clone https://github.com/austinbspencer/twitter-bot.git
 cd twitter-bot/
 # code . is a shortcut with Visual Studio Code
 code .
@@ -48,7 +48,7 @@ git checkout coding-specific
       <li>After you've personalized the script, you are ready to get it running</li>
     </ul>
     <h2 id="choosewheretorunyourscript">Choose where to run your script</h2>
-    <p>You can run your bot <a href="https://github.com/abspen1/twitter-bot/blob/master/README-local.md">locally</a>, on a <a href="https://github.com/abspen1/twitter-bot/blob/master/README-cloud.md">Google Cloud VM instance</a>, or on an <a href="https://github.com/abspen1/twitter-bot/blob/master/README-aws.md">AWS ec2 VM</a>. I prefer in the cloud so that I don't have to worry about my computer being on all the time to keep the script running. For the cloud I have instructions for using a Google Cloud Instance below. When you open a new account on the Google Cloud console you will recieve $300 credit for you to spend however you'd like. This will last a long time if the only thing you are doing on the cloud is running the twitter bot.</p>
+    <p>You can run your bot <a href="https://github.com/austinbspencer/twitter-bot/blob/master/README-local.md">locally</a>, on a <a href="https://github.com/austinbspencer/twitter-bot/blob/master/README-cloud.md">Google Cloud VM instance</a>, or on an <a href="https://github.com/austinbspencer/twitter-bot/blob/master/README-aws.md">AWS ec2 VM</a>. I prefer in the cloud so that I don't have to worry about my computer being on all the time to keep the script running. For the cloud I have instructions for using a Google Cloud Instance below. When you open a new account on the Google Cloud console you will recieve $300 credit for you to spend however you'd like. This will last a long time if the only thing you are doing on the cloud is running the twitter bot.</p>
     <h2 id="contributionsarewelcomed">Contributions are welcomed! 💚</h2>
     <ul>
       <li>
@@ -59,7 +59,7 @@ git checkout coding-specific
               /></a></strong></p>
       </li>
       <li>
-        <p><strong>Or submit an issue <a href="https://github.com/abspen1/twitter-bot/issues">here</a></strong></p>
+        <p><strong>Or submit an issue <a href="https://github.com/austinbspencer/twitter-bot/issues">here</a></strong></p>
       </li>
       <li>
         <p><strong>Check out my personal bot account here: <a href="https://twitter.com/interntendie"><img

@@ -4,7 +4,7 @@
           src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fabspen1%2Fgo-backend&count_bg=%2329BEB0&title_bg=%23555555&icon=go.svg&icon_color=%2329BEB0&title=hits&edge_flat=false"
           alt="Hits"
         /></a></h1>
-    <p>Building a RESTful API using Go programming language. I love the combination of Go and Redis as my backend for my website. I think Go is an awesome programming language and combined with the ease and speed of Redis is hard to beat. I would love to implement something more complex in the backend that would allow me to use Go Routines and channeling to get the most out of Go's speed and possibilities. This program is used in my <a href="https://abspen1.github.io">website</a> as the backend for a few different pages. Also check out my websites <a href="https://github.com/abspen1/abspen1.github.io">repository</a>!</p>
+    <p>Building a RESTful API using Go programming language. I love the combination of Go and Redis as my backend for my website. I think Go is an awesome programming language and combined with the ease and speed of Redis is hard to beat. I would love to implement something more complex in the backend that would allow me to use Go Routines and channeling to get the most out of Go's speed and possibilities. This program is used in my <a href="https://austinbspencer.github.io">website</a> as the backend for a few different pages. Also check out my websites <a href="https://github.com/austinbspencer/austinbspencer.github.io">repository</a>!</p>
     <h2 id="alp">📁 alp</h2>
     <ul>
       <li>Package that allows my <a href="https://austinspencer.works/stock-app">webapp</a> to get current stock data</li>
@@ -87,7 +87,7 @@ Message: This is an example.
     <ul>
       <li>This is how I am displaying the data for my twitter bot on the webpage</li>
       <li>This is one of my all-time favorite projects I have ever done and I have spent a lot of time doing it</li>
-      <li>Please check out the <a href="https://austinspencer.works/twitter-bot">webpage</a> and the <a href="https://github.com/abspen1/twitter-bot">source code</a></li>
+      <li>Please check out the <a href="https://austinspencer.works/twitter-bot">webpage</a> and the <a href="https://github.com/austinbspencer/twitter-bot">source code</a></li>
     </ul>
     <h3 id="tweet">📁 tweet</h3>
     <ul>
